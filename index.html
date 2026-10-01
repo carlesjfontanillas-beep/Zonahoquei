@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+
+  <title>ZH Zona Hoquei App</title>
+  <meta name="description" content="Els teus partits. El teu hoquei.">
+  <meta name="theme-color" content="#061f38">
+
+  <!-- iPhone / iPad -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ZH Zona Hoquei App">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <style>
+    :root {
+      --zh-bg: #061f38;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      background: var(--zh-bg);
+    }
+
+    body {
+      position: fixed;
+      inset: 0;
+      padding:
+        env(safe-area-inset-top)
+        env(safe-area-inset-right)
+        env(safe-area-inset-bottom)
+        env(safe-area-inset-left);
+    }
+
+    #zh-app {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      display: block;
+      background: var(--zh-bg);
+    }
+
+    #zh-fallback {
+      display: none;
+      position: fixed;
+      inset: 0;
+      place-items: center;
+      padding: 24px;
+      background: var(--zh-bg);
+      color: #fff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-align: center;
+    }
+
+    #zh-fallback a {
+      color: #fff;
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+  <iframe
+    id="zh-app"
+    title="ZH Zona Hoquei App"
+    src="https://script.google.com/macros/s/AKfycbw7MfcJqnKlZ1t5M84OIn8PcJE36jMnLT49rJRM8YnYabpqL1z9nHKyDbqetKdw-cnr/exec"
+    allow="fullscreen"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+
+  <div id="zh-fallback">
+    <div>
+      <h1>ZH Zona Hoquei App</h1>
+      <p>Els teus partits. El teu hoquei.</p>
+      <p>
+        <a href="https://script.google.com/macros/s/AKfycbw7MfcJqnKlZ1t5M84OIn8PcJE36jMnLT49rJRM8YnYabpqL1z9nHKyDbqetKdw-cnr/exec" target="_self" rel="noopener">
+          Obrir l'app
+        </a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
